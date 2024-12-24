@@ -376,7 +376,6 @@ int button_init()
 		LOG_INF("D5 ready to detect button presses");
 	}
   
-
     gpio_init_callback(&button_cb_data, button_pressed_callback, BIT(d5_pin_input.pin));
 	gpio_add_callback(d5_pin_input.port, &button_cb_data);
 
