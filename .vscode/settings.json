@@ -1,0 +1,15 @@
+{
+    "nrf-connect.taskBindings": {
+        "build": [
+            {
+                "taskName": "Build: firmware_v1.0/build/build_xiao_ble_sense_devkitv2-adafruit_1 (active)",
+                "buildConfigs": [
+                    "${workspaceFolder}\\build\\build_xiao_ble_sense_devkitv2-adafruit_1"
+                ]
+            }
+        ]
+    },
+    "files.associations": {
+        "led.h": "c"
+    }
+}
