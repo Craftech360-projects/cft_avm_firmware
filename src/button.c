@@ -135,9 +135,6 @@ static inline void notify_tap() {
         mic_off(); // Turn off microphone
         play_haptic_milli(100); // Short vibration for mute
         set_led_green(false);
-    while(1){
-        set_led_blue(true);
-    }
         is_mic_on = false;
     } else {
         LOG_INF("Turning microphone on...");
