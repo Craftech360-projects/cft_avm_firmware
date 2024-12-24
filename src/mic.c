@@ -105,10 +105,12 @@ void set_mic_callback(mix_handler callback)
 void mic_off()
 {
   nrfy_gpio_pin_clear(PDM_PWR_PIN);
+    play_haptic_milli(100);
 }
 
 
 void mic_on()
 {
   nrfy_gpio_pin_set(PDM_PWR_PIN);
+   play_haptic_milli(100); 
 }

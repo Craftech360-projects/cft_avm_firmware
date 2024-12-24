@@ -132,17 +132,15 @@ static inline void notify_tap() {
     if (is_mic_on) {
         LOG_INF("Turning microphone off...");
         printf("Turning microphone off...");
-        mic_off(); // Turn off microphone
-        play_haptic_milli(100); // Short vibration for mute
-        set_led_green(false);
+        mic_off(); // Turn off microphon
         is_mic_on = false;
     } else {
         LOG_INF("Turning microphone on...");
         printf("Turning microphone on...");
         mic_on(); // Turn on microphone
-        play_haptic_milli(100); // Short vibration for unmute
-        set_led_blue(false);
-        set_led_green(true);
+        // play_haptic_milli(100); // Short vibration for unmute
+        // set_led_blue(false);
+        // set_led_green(true);
         is_mic_on = true;
     }
 

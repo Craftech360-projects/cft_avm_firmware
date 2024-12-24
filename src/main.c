@@ -47,6 +47,9 @@ bool is_connected = false;
 bool is_charging = false;
 extern bool is_off;
 extern bool usb_charge;
+static bool is_mic_on = true; // Track microphone state
+
+
 static void boot_led_sequence(void)
 {
     // Red blink
@@ -91,6 +94,10 @@ void activate_everything_no_lights()
 
 }
 
+
+
+
+
 void set_led_state()
 {
 	// Recording and connected state - BLUE
@@ -119,8 +126,23 @@ void set_led_state()
     }
 	if (is_connected)
 	{
-		set_led_blue(true);
-		set_led_red(false);
+        if(is_mic_on)
+        {
+            set_led_blue(true);
+            set_led_green(false);
+
+        }
+        else
+        {
+
+             set_led_green(true);
+		     set_led_blue(false);
+        }
+
+        set_led_red(false);
+
+		// set_led_blue(true);
+		// set_led_red(false);
 		return;
 	}
 
