@@ -90,7 +90,9 @@ static uint32_t inc_count_1 = 0;
 static uint32_t inc_count_0 = 0;
 
 static bool is_device_on = true;
-static bool is_mic_on = true; // Track microphone state
+extern bool is_mic_on = true; // Track microphone state
+//extern bool is_mic_on = false; // Track microphone state
+
 
 static int final_button_state[2] = {0,0};
 const static int threshold = 10;

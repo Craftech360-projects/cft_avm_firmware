@@ -39,81 +39,81 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/AVM_testing/omi-Omi_DK2_v2.0.7/Friend/firmware/firmware_v1.0/build_nrf52840/zephyr/drivers/disk/cmake_install.cmake")
+  include("C:/Users/pavan/cft_avm_firmware/build_nrf52840/zephyr/drivers/disk/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/AVM_testing/omi-Omi_DK2_v2.0.7/Friend/firmware/firmware_v1.0/build_nrf52840/zephyr/drivers/interrupt_controller/cmake_install.cmake")
+  include("C:/Users/pavan/cft_avm_firmware/build_nrf52840/zephyr/drivers/interrupt_controller/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/AVM_testing/omi-Omi_DK2_v2.0.7/Friend/firmware/firmware_v1.0/build_nrf52840/zephyr/drivers/misc/cmake_install.cmake")
+  include("C:/Users/pavan/cft_avm_firmware/build_nrf52840/zephyr/drivers/misc/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/AVM_testing/omi-Omi_DK2_v2.0.7/Friend/firmware/firmware_v1.0/build_nrf52840/zephyr/drivers/pcie/cmake_install.cmake")
+  include("C:/Users/pavan/cft_avm_firmware/build_nrf52840/zephyr/drivers/pcie/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/AVM_testing/omi-Omi_DK2_v2.0.7/Friend/firmware/firmware_v1.0/build_nrf52840/zephyr/drivers/usb/cmake_install.cmake")
+  include("C:/Users/pavan/cft_avm_firmware/build_nrf52840/zephyr/drivers/usb/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/AVM_testing/omi-Omi_DK2_v2.0.7/Friend/firmware/firmware_v1.0/build_nrf52840/zephyr/drivers/usb_c/cmake_install.cmake")
+  include("C:/Users/pavan/cft_avm_firmware/build_nrf52840/zephyr/drivers/usb_c/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/AVM_testing/omi-Omi_DK2_v2.0.7/Friend/firmware/firmware_v1.0/build_nrf52840/zephyr/drivers/adc/cmake_install.cmake")
+  include("C:/Users/pavan/cft_avm_firmware/build_nrf52840/zephyr/drivers/adc/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/AVM_testing/omi-Omi_DK2_v2.0.7/Friend/firmware/firmware_v1.0/build_nrf52840/zephyr/drivers/clock_control/cmake_install.cmake")
+  include("C:/Users/pavan/cft_avm_firmware/build_nrf52840/zephyr/drivers/clock_control/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/AVM_testing/omi-Omi_DK2_v2.0.7/Friend/firmware/firmware_v1.0/build_nrf52840/zephyr/drivers/console/cmake_install.cmake")
+  include("C:/Users/pavan/cft_avm_firmware/build_nrf52840/zephyr/drivers/console/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/AVM_testing/omi-Omi_DK2_v2.0.7/Friend/firmware/firmware_v1.0/build_nrf52840/zephyr/drivers/entropy/cmake_install.cmake")
+  include("C:/Users/pavan/cft_avm_firmware/build_nrf52840/zephyr/drivers/entropy/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/AVM_testing/omi-Omi_DK2_v2.0.7/Friend/firmware/firmware_v1.0/build_nrf52840/zephyr/drivers/gpio/cmake_install.cmake")
+  include("C:/Users/pavan/cft_avm_firmware/build_nrf52840/zephyr/drivers/gpio/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/AVM_testing/omi-Omi_DK2_v2.0.7/Friend/firmware/firmware_v1.0/build_nrf52840/zephyr/drivers/i2s/cmake_install.cmake")
+  include("C:/Users/pavan/cft_avm_firmware/build_nrf52840/zephyr/drivers/i2s/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/AVM_testing/omi-Omi_DK2_v2.0.7/Friend/firmware/firmware_v1.0/build_nrf52840/zephyr/drivers/pinctrl/cmake_install.cmake")
+  include("C:/Users/pavan/cft_avm_firmware/build_nrf52840/zephyr/drivers/pinctrl/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/AVM_testing/omi-Omi_DK2_v2.0.7/Friend/firmware/firmware_v1.0/build_nrf52840/zephyr/drivers/sensor/cmake_install.cmake")
+  include("C:/Users/pavan/cft_avm_firmware/build_nrf52840/zephyr/drivers/sensor/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/AVM_testing/omi-Omi_DK2_v2.0.7/Friend/firmware/firmware_v1.0/build_nrf52840/zephyr/drivers/serial/cmake_install.cmake")
+  include("C:/Users/pavan/cft_avm_firmware/build_nrf52840/zephyr/drivers/serial/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/AVM_testing/omi-Omi_DK2_v2.0.7/Friend/firmware/firmware_v1.0/build_nrf52840/zephyr/drivers/timer/cmake_install.cmake")
+  include("C:/Users/pavan/cft_avm_firmware/build_nrf52840/zephyr/drivers/timer/cmake_install.cmake")
 endif()
 
