@@ -47,6 +47,10 @@ bool is_connected = false;
 bool is_charging = false;
 extern bool is_off;
 extern bool usb_charge;
+extern bool is_mic_on; // Track microphone state
+//extern bool is_mic_on = false; // Track microphone state
+
+
 static void boot_led_sequence(void)
 {
     // Red blink
@@ -91,6 +95,10 @@ void activate_everything_no_lights()
 
 }
 
+
+
+
+
 void set_led_state()
 {
 	// Recording and connected state - BLUE
@@ -117,12 +125,42 @@ void set_led_state()
 		set_led_blue(false);
         return;
     }
-	if (is_connected)
-	{
-		set_led_blue(true);
-		set_led_red(false);
-		return;
-	}
+	// Define a variable to store the previous state of the mic
+static bool previous_mic_state = false;
+
+if (is_connected)
+{
+    // Check if the mic state has changed
+    if (is_mic_on != previous_mic_state)
+    {
+        // Update the LED states based on the new mic state
+        if (is_mic_on)
+        {
+            // set_led_green(true);
+            // set_led_blue(false);
+
+            //set_led_green(false);
+            set_led_blue(true);
+            set_led_red(false);
+        }
+        else
+        {
+            set_led_blue(false);
+            set_led_red(true);
+            
+        }
+
+        // Update the previous state
+        previous_mic_state = is_mic_on;
+    }
+
+    // Ensure the red LED is always off
+   // set_led_red(false);
+   //  set_led_blue(true);
+
+    return;
+}
+
 
 	// Recording but lost connection - RED
 	if (!is_connected)

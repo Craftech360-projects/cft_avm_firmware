@@ -90,7 +90,9 @@ static uint32_t inc_count_1 = 0;
 static uint32_t inc_count_0 = 0;
 
 static bool is_device_on = true;
-static bool is_mic_on = true; // Track microphone state
+extern bool is_mic_on = true; // Track microphone state
+//extern bool is_mic_on = false; // Track microphone state
+
 
 static int final_button_state[2] = {0,0};
 const static int threshold = 10;
@@ -132,20 +134,15 @@ static inline void notify_tap() {
     if (is_mic_on) {
         LOG_INF("Turning microphone off...");
         printf("Turning microphone off...");
-        mic_off(); // Turn off microphone
-        play_haptic_milli(100); // Short vibration for mute
-        set_led_green(false);
-    while(1){
-        set_led_blue(true);
-    }
+        mic_off(); // Turn off microphon
         is_mic_on = false;
     } else {
         LOG_INF("Turning microphone on...");
         printf("Turning microphone on...");
         mic_on(); // Turn on microphone
-        play_haptic_milli(100); // Short vibration for unmute
-        set_led_blue(false);
-        set_led_green(true);
+        // play_haptic_milli(100); // Short vibration for unmute
+        // set_led_blue(false);
+        // set_led_green(true);
         is_mic_on = true;
     }
 

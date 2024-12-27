@@ -39,31 +39,31 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/AVM_testing/omi-Omi_DK2_v2.0.7/Friend/firmware/firmware_v1.0/build_nrf52840/modules/nrf/subsys/bluetooth/cmake_install.cmake")
+  include("C:/Users/pavan/cft_avm_firmware/build_nrf52840/modules/nrf/subsys/bluetooth/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/AVM_testing/omi-Omi_DK2_v2.0.7/Friend/firmware/firmware_v1.0/build_nrf52840/modules/nrf/subsys/net/cmake_install.cmake")
+  include("C:/Users/pavan/cft_avm_firmware/build_nrf52840/modules/nrf/subsys/net/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/AVM_testing/omi-Omi_DK2_v2.0.7/Friend/firmware/firmware_v1.0/build_nrf52840/modules/nrf/subsys/dfu/cmake_install.cmake")
+  include("C:/Users/pavan/cft_avm_firmware/build_nrf52840/modules/nrf/subsys/dfu/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/AVM_testing/omi-Omi_DK2_v2.0.7/Friend/firmware/firmware_v1.0/build_nrf52840/modules/nrf/subsys/mpsl/cmake_install.cmake")
+  include("C:/Users/pavan/cft_avm_firmware/build_nrf52840/modules/nrf/subsys/mpsl/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/AVM_testing/omi-Omi_DK2_v2.0.7/Friend/firmware/firmware_v1.0/build_nrf52840/modules/nrf/subsys/shell/cmake_install.cmake")
+  include("C:/Users/pavan/cft_avm_firmware/build_nrf52840/modules/nrf/subsys/shell/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/AVM_testing/omi-Omi_DK2_v2.0.7/Friend/firmware/firmware_v1.0/build_nrf52840/modules/nrf/subsys/debug/cmake_install.cmake")
+  include("C:/Users/pavan/cft_avm_firmware/build_nrf52840/modules/nrf/subsys/debug/cmake_install.cmake")
 endif()
 

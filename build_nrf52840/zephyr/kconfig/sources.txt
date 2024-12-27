@@ -1,8 +1,8 @@
 C:\AVM_testing\omi-Omi_DK2_v2.0.7\Friend\firmware\firmware_v1.0\Kconfig
-C:\AVM_testing\omi-Omi_DK2_v2.0.7\Friend\firmware\firmware_v1.0\build_nrf52840\Kconfig\Kconfig.dts
-C:\AVM_testing\omi-Omi_DK2_v2.0.7\Friend\firmware\firmware_v1.0\build_nrf52840\Kconfig\Kconfig.modules
-C:\AVM_testing\omi-Omi_DK2_v2.0.7\Friend\firmware\firmware_v1.0\build_nrf52840\Kconfig\Kconfig.shield
-C:\AVM_testing\omi-Omi_DK2_v2.0.7\Friend\firmware\firmware_v1.0\build_nrf52840\Kconfig\Kconfig.shield.defconfig
+C:\Users\pavan\cft_avm_firmware\build_nrf52840\Kconfig\Kconfig.dts
+C:\Users\pavan\cft_avm_firmware\build_nrf52840\Kconfig\Kconfig.modules
+C:\Users\pavan\cft_avm_firmware\build_nrf52840\Kconfig\Kconfig.shield
+C:\Users\pavan\cft_avm_firmware\build_nrf52840\Kconfig\Kconfig.shield.defconfig
 C:\ncs\toolchains\cf2149caf2\opt\zephyr-sdk\cmake\zephyr\Kconfig
 C:\ncs\v2.6.1\modules\hal\cirrus-logic\Kconfig
 C:\ncs\v2.6.1\modules\lib\chre\platform\zephyr\Kconfig

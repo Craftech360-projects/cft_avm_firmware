@@ -39,21 +39,21 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/AVM_testing/omi-Omi_DK2_v2.0.7/Friend/firmware/firmware_v1.0/build_nrf52840/modules/nrf/lib/bin/cmake_install.cmake")
+  include("C:/Users/pavan/cft_avm_firmware/build_nrf52840/modules/nrf/lib/bin/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/AVM_testing/omi-Omi_DK2_v2.0.7/Friend/firmware/firmware_v1.0/build_nrf52840/modules/nrf/lib/multithreading_lock/cmake_install.cmake")
+  include("C:/Users/pavan/cft_avm_firmware/build_nrf52840/modules/nrf/lib/multithreading_lock/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/AVM_testing/omi-Omi_DK2_v2.0.7/Friend/firmware/firmware_v1.0/build_nrf52840/modules/nrf/lib/flash_patch/cmake_install.cmake")
+  include("C:/Users/pavan/cft_avm_firmware/build_nrf52840/modules/nrf/lib/flash_patch/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/AVM_testing/omi-Omi_DK2_v2.0.7/Friend/firmware/firmware_v1.0/build_nrf52840/modules/nrf/lib/fatal_error/cmake_install.cmake")
+  include("C:/Users/pavan/cft_avm_firmware/build_nrf52840/modules/nrf/lib/fatal_error/cmake_install.cmake")
 endif()
 

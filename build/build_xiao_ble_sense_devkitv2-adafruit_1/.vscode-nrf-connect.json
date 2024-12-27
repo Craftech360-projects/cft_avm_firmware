@@ -18,7 +18,7 @@
   "confFiles": [
     "prj_xiao_ble_sense_devkitv2-adafruit.conf"
   ],
-  "buildDirectory": "build\\build_xiao_ble_sense_devkitv2-adafruit_1",
+  "buildDirectory": "..\\..\\..\\..\\..\\Users\\pavan\\cft_avm_firmware\\build\\build_xiao_ble_sense_devkitv2-adafruit_1",
   "kconfigFragments": [],
   "snippets": [],
   "dtcOverlays": [

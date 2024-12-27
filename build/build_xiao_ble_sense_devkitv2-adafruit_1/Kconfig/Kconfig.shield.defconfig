@@ -1,2 +1,0 @@
-osource "c:/avm_testing/omi-omi_dk2_v2.0.7/friend/firmware/firmware_v1.0/boards/shields/*/Kconfig.defconfig"
-osource "C:/ncs/v2.6.1/nrf/boards/shields/*/Kconfig.defconfig"

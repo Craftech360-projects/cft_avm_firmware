@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/AVM_testing/omi-Omi_DK2_v2.0.7/Friend/firmware/firmware_v1.0/build_nrf52840/zephyr/cmake_install.cmake")
+  include("C:/Users/pavan/cft_avm_firmware/build_nrf52840/zephyr/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/AVM_testing/omi-Omi_DK2_v2.0.7/Friend/firmware/firmware_v1.0/build_nrf52840/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/pavan/cft_avm_firmware/build_nrf52840/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
