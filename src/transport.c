@@ -360,7 +360,8 @@ static void _transport_connected(struct bt_conn *conn, uint8_t err)
     }
 
     LOG_INF("bluetooth activated");
-
+    printf("bluetooth activated");
+     play_haptic_milli(50); 
     current_connection = bt_conn_ref(conn);
     current_mtu = info.le.data_len->tx_max_len;
     LOG_INF("Transport connected");
@@ -386,6 +387,7 @@ static void _transport_disconnected(struct bt_conn *conn, uint8_t err)
     storage_is_on = false;
 
     LOG_INF("Transport disconnected");
+     play_haptic_milli(50);
     bt_conn_unref(conn);
     current_connection = NULL;
     current_mtu = 0;

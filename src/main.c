@@ -130,43 +130,51 @@ static bool previous_mic_state = false;
 
 if (is_connected)
 {
+    // Reset previous state on new connection
+    static bool was_connected = false; // Track if previously disconnected
+
+    if (!was_connected)
+    {
+        // Reset previous state to force re-evaluation
+        previous_mic_state = !is_mic_on; // Opposite of the current mic state
+        was_connected = true;           // Mark as connected
+    }
+
     // Check if the mic state has changed
     if (is_mic_on != previous_mic_state)
     {
         // Update the LED states based on the new mic state
         if (is_mic_on)
         {
-            // set_led_green(true);
-            // set_led_blue(false);
-
-            //set_led_green(false);
+            // Mic on animation
             set_led_blue(true);
+            set_led_green(false);
             set_led_red(false);
         }
         else
         {
+            // Advertising mode animation
             set_led_blue(false);
+            set_led_green(false);
             set_led_red(true);
-            
         }
 
         // Update the previous state
         previous_mic_state = is_mic_on;
     }
 
-    // Ensure the red LED is always off
-   // set_led_red(false);
-   //  set_led_blue(true);
-
     return;
 }
-
 
 	// Recording but lost connection - RED
 	if (!is_connected)
 	{
-		set_led_red(true);
+		 set_led_green(true);
+        k_msleep(BOOT_BLINK_DURATION_MS);
+        set_led_green(false);
+        k_msleep(BOOT_PAUSE_DURATION_MS);
 		set_led_blue(false);
+        set_led_red(false);
 		return;
 	}
 
@@ -207,7 +215,7 @@ int main(void)
         k_msleep(1000);
         activate_everything_no_lights();
         bt_on();
-        play_haptic_milli(100);
+        play_haptic_milli(50);
 
     }
     else
@@ -330,4 +338,3 @@ int main(void)
 	// Unreachable
 	return 0;
 }
-

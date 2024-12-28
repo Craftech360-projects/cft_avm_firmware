@@ -1,0 +1,28 @@
+{
+  "toolchainPath": "c:\\ncs\\toolchains\\cf2149caf2",
+  "sdkPath": "c:\\ncs\\v2.6.1",
+  "board": "xiao_ble_sense",
+  "boardDirs": [
+    "c:/ncs/v2.6.1/zephyr/boards/arm/xiao_ble"
+  ],
+  "boardRevision": "",
+  "boardDir": "c:/ncs/v2.6.1/zephyr/boards/arm/xiao_ble",
+  "shouldBuild": true,
+  "optimizations": "none",
+  "cmakeArgs": [
+    "-DCMAKE_EXPORT_COMPILE_COMMANDS=\"YES\"",
+    "-DCMAKE_BUILD_TYPE=\"Debug\"",
+    "-DPLATFORM=\"nrf52840\"",
+    "-DCACHED_CONF_FILE=\"c:\\Users\\pavan\\cft_avm_firmware\\prj_xiao_ble_sense_devkitv2-adafruit.conf\""
+  ],
+  "confFiles": [
+    "prj_xiao_ble_sense_devkitv2-adafruit.conf"
+  ],
+  "buildDirectory": "build\\build_xiao_ble_sense_devkitv2-adafruit_new",
+  "kconfigFragments": [],
+  "snippets": [],
+  "dtcOverlays": [
+    "c:\\Users\\pavan\\cft_avm_firmware\\overlay\\xiao_ble_sense_devkitv2-adafruit.overlay"
+  ],
+  "extraDtcOverlays": []
+}

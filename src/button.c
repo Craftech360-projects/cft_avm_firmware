@@ -129,6 +129,7 @@ static inline void notify_unpress()
 static inline void notify_tap() {
     final_button_state[0] = SINGLE_TAP; // Single tap detected
     LOG_INF("Single tap detected");
+    play_haptic_milli(50); // Optional: Vibrate to indicate power-off 
 
     // Toggle microphone state
     if (is_mic_on) {
@@ -156,7 +157,9 @@ static inline void notify_double_tap()
     final_button_state[0] = DOUBLE_TAP; //button press
     LOG_INF("double tap");
     printf("double_TAP\n");
-    play_haptic_milli(100);
+    play_haptic_milli(50); // Optional: Vibrate to indicate power-off 
+    k_msleep(500);
+    play_haptic_milli(50); // Optional: Vibrate to indicate power-off
     struct bt_conn *conn = get_current_connection();
     if (conn != NULL)
     { 
@@ -169,18 +172,23 @@ static inline void notify_double_tap()
 static inline void notify_long_tap() {
     final_button_state[0] = LONG_TAP; // Button press for long tap
     LOG_INF("long tap");
+    play_haptic_milli(50); // Optional: Vibrate to indicate power-off 
+    k_msleep(500);
+    play_haptic_milli(50); // Optional: Vibrate to indicate power-off
+    k_msleep(500);
+    play_haptic_milli(100); // Optional: Vibrate to indicate power-off
 
     if (is_device_on) {
         LOG_INF("Turning off the device...");
         printf("Turning off the device...");
-        play_haptic_milli(100);
+       // play_haptic_milli(100);
         turnoff_all(); // Call the function to turn off peripherals
         is_device_on = false;
     } else {
         LOG_INF("Turning on the device...");
         printf("Turning on the device...");
         turnon_all(); // Call a new function to turn on peripherals
-        play_haptic_milli(100); 
+       // play_haptic_milli(100); 
         is_device_on = true;
     }
 
@@ -268,7 +276,6 @@ void check_button_level(struct k_work *work_item)
     {
         LOG_INF("single tap detected\n");
         btn_last_event = event;
-        play_haptic_milli(500);
         notify_tap();
     }
 
@@ -277,7 +284,6 @@ void check_button_level(struct k_work *work_item)
     {
         LOG_INF("double tap detected\n");
         btn_last_event = event;
-        play_haptic_milli(500);
         notify_double_tap();
     }
 
@@ -399,11 +405,6 @@ void turnon_all() {
     //sd_on();
     // speaker_on();
     //accel_on();
-
-
-    play_haptic_milli(300);
-    play_haptic_milli(50); // Optional: Vibrate to indicate power-on
-
     set_led_blue(true);
     set_led_red(false);
     set_led_green(true);
@@ -419,10 +420,6 @@ void turnoff_all() {
    // sd_off();
     
     //accel_off();
-
-    play_haptic_milli(300);
-   // play_haptic_milli(50); // Optional: Vibrate to indicate power-off
-
     speaker_off();
 
     set_led_blue(false);
