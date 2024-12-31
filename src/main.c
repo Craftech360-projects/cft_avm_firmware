@@ -108,21 +108,21 @@ void set_led_state()
         is_charging = !is_charging;
         if(is_charging)
         {
-            set_led_green(true);
+            set_led_blue(true);
         }
         else
         {
-            set_led_green(false);
+            set_led_blue(false);
         }
     }
     else
     {
-        set_led_green(false);
+        set_led_blue(false);
     }
     if(is_off)
     {
 		set_led_red(false);
-		set_led_blue(false);
+		set_led_green(false);
         return;
     }
 	// Define a variable to store the previous state of the mic
@@ -147,8 +147,8 @@ if (is_connected)
         if (is_mic_on)
         {
             // Mic on animation
-            set_led_blue(true);
-            set_led_green(false);
+            set_led_green(true);
+            set_led_blue(false);
             set_led_red(false);
         }
         else
@@ -169,11 +169,11 @@ if (is_connected)
 	// Recording but lost connection - RED
 	if (!is_connected)
 	{
-		 set_led_green(true);
+		set_led_blue(true);
         k_msleep(BOOT_BLINK_DURATION_MS);
-        set_led_green(false);
+        set_led_blue(false);
         k_msleep(BOOT_PAUSE_DURATION_MS);
-		set_led_blue(false);
+		set_led_green(false);
         set_led_red(false);
 		return;
 	}
@@ -213,9 +213,9 @@ int main(void)
         usb_charge = false;
         force_button_state(GRACE);
         k_msleep(1000);
-        activate_everything_no_lights();
-        bt_on();
-        play_haptic_milli(50);
+       activate_everything_no_lights();
+       bt_on();
+       play_haptic_milli(50);
 
     }
     else
@@ -282,7 +282,7 @@ int main(void)
             set_led_blue(false);
             return err;
         }
-        play_haptic_milli(500);
+       // play_haptic_milli(500);
         set_led_blue(false);
 
         // Indicate microphone initialization

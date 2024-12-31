@@ -57,7 +57,7 @@ CACHED_BOARD:STRING=xiao_ble_sense
 // listed, e.g. CONF_FILE="prj1.conf;prj2.conf" The CACHED_CONF_FILE
 // is internal Zephyr variable used between CMake runs. To change
 // CONF_FILE, use the CONF_FILE variable.
-CACHED_CONF_FILE:STRING=c:/Users/pavan/cft_avm_firmware/prj_xiao_ble_sense_devkitv2-adafruit.conf
+CACHED_CONF_FILE:STRING=c:\Users\pavan\cft_avm_firmware\prj_xiao_ble_sense_devkitv2-adafruit.conf
 
 //Selected shield
 CACHED_SHIELD:STRING=

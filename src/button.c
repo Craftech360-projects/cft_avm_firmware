@@ -129,7 +129,7 @@ static inline void notify_unpress()
 static inline void notify_tap() {
     final_button_state[0] = SINGLE_TAP; // Single tap detected
     LOG_INF("Single tap detected");
-    play_haptic_milli(50); // Optional: Vibrate to indicate power-off 
+    //play_haptic_milli(50); // Optional: Vibrate to indicate power-off 
 
     // Toggle microphone state
     if (is_mic_on) {
@@ -158,7 +158,7 @@ static inline void notify_double_tap()
     LOG_INF("double tap");
     printf("double_TAP\n");
     play_haptic_milli(50); // Optional: Vibrate to indicate power-off 
-    k_msleep(500);
+    k_msleep(50);
     play_haptic_milli(50); // Optional: Vibrate to indicate power-off
     struct bt_conn *conn = get_current_connection();
     if (conn != NULL)
@@ -203,7 +203,7 @@ static inline void notify_long_tap() {
 
 #define TAP_THRESHOLD      500  // 300 ms for single tap
 #define DOUBLE_TAP_WINDOW  600  // 600 ms maximum for double-tap
-#define LONG_PRESS_TIME    2500 // 1000 ms for long press
+#define LONG_PRESS_TIME    1500 // 1000 ms for long press
 
 typedef enum {
     BUTTON_EVENT_NONE,
@@ -421,7 +421,6 @@ void turnoff_all() {
     
     //accel_off();
     speaker_off();
-
     set_led_blue(false);
     set_led_green(false);
     set_led_red(true);

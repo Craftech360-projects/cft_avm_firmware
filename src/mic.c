@@ -10,6 +10,7 @@
 #include "utils.h"
 #include "led.h"
 
+
 LOG_MODULE_REGISTER(mic, CONFIG_LOG_DEFAULT_LEVEL);
 
 //
@@ -104,8 +105,9 @@ void set_mic_callback(mix_handler callback)
 
 void mic_off()
 {
-  nrfy_gpio_pin_clear(PDM_PWR_PIN);
-    play_haptic_milli(100);
+    play_haptic_milli(50);
+    nrfy_gpio_pin_clear(PDM_PWR_PIN);
+   // play_haptic_milli(50);
     //  set_led_red(true);
     //  set_led_green(false);
 }
@@ -113,8 +115,13 @@ void mic_off()
 
 void mic_on()
 {
-  nrfy_gpio_pin_set(PDM_PWR_PIN);
-   play_haptic_milli(100); 
+    play_haptic_milli(50); // Optional: Vibrate to indicate power-off 
+    k_msleep(10);
+    play_haptic_milli(50); // Optional: Vibrate to indicate power-off
+    nrfy_gpio_pin_set(PDM_PWR_PIN);
+    // play_haptic_milli(50); // Optional: Vibrate to indicate power-off 
+    // k_msleep(50);
+    // play_haptic_milli(50); // Optional: Vibrate to indicate power-off
 //   set_led_green(true);
 //   set_led_red(false);
 }
